@@ -1,0 +1,1364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		064AF504EEABE91D16D493556C29D45A /* GULLoggerCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = D9C1632283993539567832E15F856096 /* GULLoggerCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09C1DD4F3DEF5CF39D4454F1015D38D6 /* GULNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E0D0595D5A18B40217B1BFD971C6B5 /* GULNetwork.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0D76CFA163D7647B206AC284771E44D8 /* GoogleUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1097DB2EFB3F82B55F3DF818BFF0C738 /* GoogleUtilities-dummy.m */; };
+		0DF18CCFBB5C8A79CAF85F7C02CBDB58 /* GULReachabilityMessageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3AD3C490747B7D0C2E574CBFC64D1F /* GULReachabilityMessageCode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		161F339A67E424DAA844EA7C48DFAB0B /* GULNetworkURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66BA2ADBBA97FDC11EC8578FEB7159 /* GULNetworkURLSession.m */; };
+		1B9770E22003B4527FAC39491E678275 /* Pods-SealSoundsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2C620C620D51074948D693DDF7AA94 /* Pods-SealSoundsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F8144E53E1A43EADE417A19539780A3 /* GULReachabilityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D95A4F30A6C738251CCA99C50056628B /* GULReachabilityChecker.m */; };
+		25ACD1B14047CDEBEFD043F80825E81E /* GULSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9399DA9517E82CB0CAF0D3E1E6ADF974 /* GULSwizzler.m */; };
+		26CCC8B39FB284AB539C5DA429FC09DF /* GULLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6C5D524BAC85F7C3C83DCA96FB183E /* GULLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = D623A705C684355158D1F09943837FA4 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 590BC436A4886477F040E7C354116EDD /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = BD25FE502037C15897A656E3C514B775 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		3B6B1B198C233F114BA06D8CE9787431 /* GULNetworkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D12994700EDE02A64B224EA5BD785065 /* GULNetworkConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3CBD5D3A1D23BAF864D19EC1AE61902C /* GULNetworkLoggerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA438586753D68A2AF6A97854808496 /* GULNetworkLoggerProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		410AC35D2D63FEBF17460B0EA77E4B9C /* GoogleUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0871A74BFED4AE74660A7565E0050A48 /* GoogleUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D498AD8F3EA4F5301BBF4BFD3190311 /* nanopb-dummy.m */; };
+		471BEA6E8B4838E49CC90DC8A098A801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */; };
+		487DFE4B0E232C1A023A4977E7001B30 /* GULNetworkURLSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B6B86A732750A6BBAA020279826F7E /* GULNetworkURLSession.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4C05369D1C2AFFDC6E8CC6A21FF6FFFB /* GULNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E2BCC8918E8A55E9CCE2017B180C8D /* GULNetwork.m */; };
+		4D1D700236A0DC85CD8C789CE8354645 /* Pods-SealSounds-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9710AEDC015208DC40EBBF422C7460DD /* Pods-SealSounds-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52F333DF6E858B07AEBCB2DBF2A99976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */; };
+		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CB778BF6215B9AF70349F6DF29B26681 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 33D0E4FF7794629BF1345D8CDA5F5719 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		5705CFB8795548E7A3DCF31750D8358C /* GULNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A8914FEC9A43F1A052C9B0E2079E3FF0 /* GULNSData+zlib.m */; };
+		590F2B905DA9615E90B39A77F778E58F /* GULAppEnvironmentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD26489E46CE09443F70248817531D5 /* GULAppEnvironmentUtil.m */; };
+		59CBCE73DA5E7C714DC8758552F16BED /* Pods-SealSounds-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27AA43325C63CA9CBCB2E6F8EB049B /* Pods-SealSounds-dummy.m */; };
+		5A7D30AE0F21BD03C648F930121EEA1D /* GULOriginalIMPConvenienceMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A1882569FD23D3AB5EDBD716088C7C /* GULOriginalIMPConvenienceMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6FCBE7B94C616D59D1B4B95072D4BC70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */; };
+		78FCAD17C275491C9CBFECD65E301AE1 /* Pods-SealSoundsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1D76888D85C971FE2FE410F8CFE0A2 /* Pods-SealSoundsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA09D419F0270AB2F4CB16ABC78C8BC /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E7EE03DECAF684194E6E5CEECA1360 /* GULAppEnvironmentUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBF5FC6772F5448DBBE7C37A5021A0A /* GULAppEnvironmentUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		88C2FD082A57CC3AB1A93F7ACAB70F2B /* GULAppDelegateSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4195F543EB54E2A02B6CFF818B5B01F2 /* GULAppDelegateSwizzler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8AB16EA5856666193D2987EC4D10581C /* GULReachabilityChecker+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FF43E31AF492196F9D104CE01AC3FD77 /* GULReachabilityChecker+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A151D1AD6BFF47E752D8F9CBBDCA0FA3 /* Pods-SealSoundsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFAF23428B51184AABBA821B370041F /* Pods-SealSoundsTests-dummy.m */; };
+		A46AEFFC52E4B5C9BA7D5FD39D327EC4 /* GULReachabilityChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EDCA0F4ABD9128E7F60F4C4088B4A8 /* GULReachabilityChecker.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A8C37100707FE19E8FA59F185CE4A0E6 /* GULNetworkMessageCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 094163573C15B0BDE32CD6BA700F9532 /* GULNetworkMessageCode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ACDEA832C72E143A227772CE64F54182 /* GULAppDelegateSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 346C09FF9B6A27134091089AA466F5D9 /* GULAppDelegateSwizzler.m */; };
+		B061FFB91E2F5D16754C677CB248DBBA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD19C461B34FE4F98A7838E77648F21C /* SystemConfiguration.framework */; };
+		B94A620F7C634482A66F1F4B93818E82 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C06F92045E13854C36CA4D809F2F1C17 /* GULLogger.m */; };
+		BF7C3509E37A8DBB6592A8FAF564321F /* Pods-SealSoundsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D55FEF6C26F791308AD8C169471FE5B /* Pods-SealSoundsUITests-dummy.m */; };
+		C0D1AE663484AA7E8AB51EBCED863027 /* GULApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 147FD0491E4892F838A421368A70C46E /* GULApplication.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C8413C33F078508B6ADDE02EFFA7824C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */; };
+		D27A757065EFF358D60685D85645BF0B /* GULNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DEEBA1EBCB3ED1F7548972AAF4FF7A /* GULNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7715B3A3A1602DF76CEF60D23341A28 /* GULLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = D25D8E323E871DF052506D2B33A69A64 /* GULLoggerLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7B34C05A2082DC6B808C07323DD2D6F /* GULMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A8B5B9287C3ECB9F97E56D1A3C6AA8 /* GULMutableDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DE8F997CCE1C0D87E4727F27F540294E /* GULSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0A2FD62DBEF27BA7AF6193591A4487 /* GULSwizzler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9538CC7EE9AD17D5C55F278A8EC292 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E24495B3EF5B7A0E1C92279BC8CACACE /* GULMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 418FB28A35916B4CFB07DAF3AEAD124B /* GULMutableDictionary.m */; };
+		E2EBCB5462B764F9B7070284A569B225 /* GULNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A82E3774B4A17CFB346CF148700915 /* GULNetworkConstants.m */; };
+		E545A2DB52517DCCF20B85C7E2572CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */; };
+		E718178EC4C665DABE767F5C09E07456 /* GULAppDelegateSwizzler_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAA4ACB83ED1BA172C99E54E9311A21 /* GULAppDelegateSwizzler_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0E7EF06C12CE679F27FB16273790378 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BEC7D39C0C0D0226340D3016B83ABB9 /* Security.framework */; };
+		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03286847EFABE1D8D8F52DAA5D09A6B8 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49881BDFE9C55E2E9C5B5B9E536B2B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4DD607B3C88F673EADCB19773FA3E6;
+			remoteInfo = "Pods-SealSounds";
+		};
+		73BE7A783F460FDF980294AAD97A7FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
+			remoteInfo = nanopb;
+		};
+		CF49139D1A833327D9FDDE510A3784F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4679E78B35182C1BFCEF32163093400;
+			remoteInfo = GoogleUtilities;
+		};
+		EA7DD45B790FF239BD224B48D31DA547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4DD607B3C88F673EADCB19773FA3E6;
+			remoteInfo = "Pods-SealSounds";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03286847EFABE1D8D8F52DAA5D09A6B8 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
+		04DC304AFD93B754E7B03117CAD5008E /* Pods-SealSounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSounds.release.xcconfig"; sourceTree = "<group>"; };
+		07A1882569FD23D3AB5EDBD716088C7C /* GULOriginalIMPConvenienceMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULOriginalIMPConvenienceMacros.h; path = GoogleUtilities/MethodSwizzler/Private/GULOriginalIMPConvenienceMacros.h; sourceTree = "<group>"; };
+		082832A21662B4C3A6AD0F63217FF0DA /* Pods-SealSoundsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSoundsTests-frameworks.sh"; sourceTree = "<group>"; };
+		0871A74BFED4AE74660A7565E0050A48 /* GoogleUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleUtilities-umbrella.h"; sourceTree = "<group>"; };
+		094163573C15B0BDE32CD6BA700F9532 /* GULNetworkMessageCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkMessageCode.h; path = GoogleUtilities/Network/Private/GULNetworkMessageCode.h; sourceTree = "<group>"; };
+		1097DB2EFB3F82B55F3DF818BFF0C738 /* GoogleUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleUtilities-dummy.m"; sourceTree = "<group>"; };
+		147FD0491E4892F838A421368A70C46E /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Private/GULApplication.h; sourceTree = "<group>"; };
+		14EDCA0F4ABD9128E7F60F4C4088B4A8 /* GULReachabilityChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityChecker.h; path = GoogleUtilities/Reachability/Private/GULReachabilityChecker.h; sourceTree = "<group>"; };
+		1A27AA43325C63CA9CBCB2E6F8EB049B /* Pods-SealSounds-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SealSounds-dummy.m"; sourceTree = "<group>"; };
+		1F8E4DF3E13B2575DAA3FF35BBBEBC2B /* Pods_SealSoundsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SealSoundsUITests.framework; path = "Pods-SealSoundsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2124CCE13C68A91FDE5F48E9430E21AC /* Pods-SealSoundsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSoundsTests-resources.sh"; sourceTree = "<group>"; };
+		239EDEF5D4E567F8289718569B56B190 /* Pods-SealSoundsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSoundsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25E0D0595D5A18B40217B1BFD971C6B5 /* GULNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetwork.h; path = GoogleUtilities/Network/Private/GULNetwork.h; sourceTree = "<group>"; };
+		275140D7C93C454A74CBC7833450A175 /* Pods-SealSoundsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSoundsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B1D76888D85C971FE2FE410F8CFE0A2 /* Pods-SealSoundsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SealSoundsUITests-umbrella.h"; sourceTree = "<group>"; };
+		2F3C67CD1C1FCA2E888C5412F173E0BE /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		33D0E4FF7794629BF1345D8CDA5F5719 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		346C09FF9B6A27134091089AA466F5D9 /* GULAppDelegateSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppDelegateSwizzler.m; path = GoogleUtilities/AppDelegateSwizzler/GULAppDelegateSwizzler.m; sourceTree = "<group>"; };
+		40CE3A9888DF2B173D3016770A68C0AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418FB28A35916B4CFB07DAF3AEAD124B /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
+		4195F543EB54E2A02B6CFF818B5B01F2 /* GULAppDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Private/GULAppDelegateSwizzler.h; sourceTree = "<group>"; };
+		4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4B63163A285D3806DC30F529BA227E70 /* Pods-SealSoundsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SealSoundsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D55FEF6C26F791308AD8C169471FE5B /* Pods-SealSoundsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SealSoundsUITests-dummy.m"; sourceTree = "<group>"; };
+		5143C8787E29B017CB042FC8DC98DE1A /* GoogleUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleUtilities.modulemap; sourceTree = "<group>"; };
+		531BE5CECE0EB98B3E313F89A927F614 /* Pods-SealSoundsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SealSoundsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		57E2BCC8918E8A55E9CCE2017B180C8D /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
+		590BC436A4886477F040E7C354116EDD /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		5BEC7D39C0C0D0226340D3016B83ABB9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5D3DE97C24EF21ABCC0CD342275A5419 /* GoogleUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleUtilities-prefix.pch"; sourceTree = "<group>"; };
+		5DBF5FC6772F5448DBBE7C37A5021A0A /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
+		5F572E3D9A43011E43E021549340DA70 /* Pods-SealSounds-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SealSounds-acknowledgements.plist"; sourceTree = "<group>"; };
+		61A8B5B9287C3ECB9F97E56D1A3C6AA8 /* GULMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULMutableDictionary.h; path = GoogleUtilities/Network/Private/GULMutableDictionary.h; sourceTree = "<group>"; };
+		6D3AD3C490747B7D0C2E574CBFC64D1F /* GULReachabilityMessageCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityMessageCode.h; path = GoogleUtilities/Reachability/Private/GULReachabilityMessageCode.h; sourceTree = "<group>"; };
+		6EFAF23428B51184AABBA821B370041F /* Pods-SealSoundsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SealSoundsTests-dummy.m"; sourceTree = "<group>"; };
+		75D768324B544423799AECCF92A8842D /* Pods-SealSoundsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSoundsUITests-resources.sh"; sourceTree = "<group>"; };
+		760AD2A6B3F978E1925A9B61EF9EC4AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7894F3DF7F86BF16530802BF1F818BC6 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		89D5687AA60D58D587A798C91142DDF4 /* Pods-SealSoundsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSoundsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8A3A344606BEB5D98D5C78D5B050753F /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		8D498AD8F3EA4F5301BBF4BFD3190311 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		902270EB6A5EEE03E13E07962D5EF298 /* Pods-SealSounds-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SealSounds-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90A36F641FB5A36D140F4CF43855516D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917335627B6B7C56E42889B42B1D5C62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9399DA9517E82CB0CAF0D3E1E6ADF974 /* GULSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSwizzler.m; path = GoogleUtilities/MethodSwizzler/GULSwizzler.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9710AEDC015208DC40EBBF422C7460DD /* Pods-SealSounds-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SealSounds-umbrella.h"; sourceTree = "<group>"; };
+		97DEEBA1EBCB3ED1F7548972AAF4FF7A /* GULNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULNSData+zlib.h"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.h"; sourceTree = "<group>"; };
+		9C0A2FD62DBEF27BA7AF6193591A4487 /* GULSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSwizzler.h; path = GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h; sourceTree = "<group>"; };
+		9D01EB248FAFD20AC0A3D0070AAE7C07 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		A3A82E3774B4A17CFB346CF148700915 /* GULNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkConstants.m; path = GoogleUtilities/Network/GULNetworkConstants.m; sourceTree = "<group>"; };
+		A3BD63D4CE4A71CADB4DF0F62D4C5DBB /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nanopb.modulemap; sourceTree = "<group>"; };
+		A8914FEC9A43F1A052C9B0E2079E3FF0 /* GULNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GULNSData+zlib.m"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.m"; sourceTree = "<group>"; };
+		A8E4F1939A707CD4ADFCEA0863BD01D8 /* Pods-SealSoundsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SealSoundsTests.modulemap"; sourceTree = "<group>"; };
+		AC2BDE52631F1661EBA6D2DB456822F0 /* Pods_SealSoundsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SealSoundsTests.framework; path = "Pods-SealSoundsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6C5D524BAC85F7C3C83DCA96FB183E /* GULLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLogger.h; path = GoogleUtilities/Logger/Private/GULLogger.h; sourceTree = "<group>"; };
+		AEAA4ACB83ED1BA172C99E54E9311A21 /* GULAppDelegateSwizzler_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppDelegateSwizzler_Private.h; path = GoogleUtilities/AppDelegateSwizzler/Internal/GULAppDelegateSwizzler_Private.h; sourceTree = "<group>"; };
+		AFA6238EF10232DD6007D13DC532062A /* Pods-SealSoundsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSoundsTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFB03954212B219CB570A437BE25C77C /* Pods-SealSounds-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSounds-frameworks.sh"; sourceTree = "<group>"; };
+		AFD62C72225957689462A7BD2B6F55AB /* Pods-SealSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B8ACF9C8CA082241768796E37B544F /* Pods-SealSoundsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SealSoundsUITests.modulemap"; sourceTree = "<group>"; };
+		B64EF49152CFF63616D08666AB189401 /* Pods-SealSoundsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SealSoundsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA9538CC7EE9AD17D5C55F278A8EC292 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		BB064579D21777F58E7B8E9260558051 /* Pods_SealSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SealSounds.framework; path = "Pods-SealSounds.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD25FE502037C15897A656E3C514B775 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		C062F030E2488F6A59F962D08474A9E1 /* Pods-SealSoundsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SealSoundsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C06F92045E13854C36CA4D809F2F1C17 /* GULLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULLogger.m; path = GoogleUtilities/Logger/GULLogger.m; sourceTree = "<group>"; };
+		CB778BF6215B9AF70349F6DF29B26681 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		CBA09D419F0270AB2F4CB16ABC78C8BC /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		CD19C461B34FE4F98A7838E77648F21C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D12994700EDE02A64B224EA5BD785065 /* GULNetworkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkConstants.h; path = GoogleUtilities/Network/Private/GULNetworkConstants.h; sourceTree = "<group>"; };
+		D25D8E323E871DF052506D2B33A69A64 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GULLoggerLevel.h; sourceTree = "<group>"; };
+		D3807F4F0108EE4A2C70A519078105C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3BDCFECC5989E369F25E3856455F88D /* Pods-SealSounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SealSounds.debug.xcconfig"; sourceTree = "<group>"; };
+		D623A705C684355158D1F09943837FA4 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		D885138AC0D30332FDCEB8EC0EDF16ED /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleUtilities.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95A4F30A6C738251CCA99C50056628B /* GULReachabilityChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULReachabilityChecker.m; path = GoogleUtilities/Reachability/GULReachabilityChecker.m; sourceTree = "<group>"; };
+		D9C1632283993539567832E15F856096 /* GULLoggerCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerCodes.h; path = GoogleUtilities/Common/GULLoggerCodes.h; sourceTree = "<group>"; };
+		DA6515E6CC1A9CF4540125E49F64146B /* GoogleUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.xcconfig; sourceTree = "<group>"; };
+		DA66BA2ADBBA97FDC11EC8578FEB7159 /* GULNetworkURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkURLSession.m; path = GoogleUtilities/Network/GULNetworkURLSession.m; sourceTree = "<group>"; };
+		DDA438586753D68A2AF6A97854808496 /* GULNetworkLoggerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkLoggerProtocol.h; path = GoogleUtilities/Network/Private/GULNetworkLoggerProtocol.h; sourceTree = "<group>"; };
+		DE3BD8967681D55BFF72BDDC41B3FFC7 /* Pods-SealSounds.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SealSounds.modulemap"; sourceTree = "<group>"; };
+		E25BF9E72827F3D3AFD543BFDB0D27F2 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B6B86A732750A6BBAA020279826F7E /* GULNetworkURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkURLSession.h; path = GoogleUtilities/Network/Private/GULNetworkURLSession.h; sourceTree = "<group>"; };
+		EB2C620C620D51074948D693DDF7AA94 /* Pods-SealSoundsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SealSoundsTests-umbrella.h"; sourceTree = "<group>"; };
+		F838E0EC9AE4F1B061BABAE4FF632C38 /* Pods-SealSounds-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SealSounds-resources.sh"; sourceTree = "<group>"; };
+		FBD26489E46CE09443F70248817531D5 /* GULAppEnvironmentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppEnvironmentUtil.m; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m; sourceTree = "<group>"; };
+		FF43E31AF492196F9D104CE01AC3FD77 /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		971041836592E28ADEEDA495A96A62A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F333DF6E858B07AEBCB2DBF2A99976 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E77B437721CBAE400FCE78ED75C9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E545A2DB52517DCCF20B85C7E2572CE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F281DEE04BCA494CCF4DD841C7124C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471BEA6E8B4838E49CC90DC8A098A801 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE133E92801B23FC422E4DE7AF839240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCBE7B94C616D59D1B4B95072D4BC70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68FB4CDCB813C5D626E3B0D744EEB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8413C33F078508B6ADDE02EFFA7824C /* Foundation.framework in Frameworks */,
+				F0E7EF06C12CE679F27FB16273790378 /* Security.framework in Frameworks */,
+				B061FFB91E2F5D16754C677CB248DBBA /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070FD964D2CA057B0CB76A9E2C8EB2D6 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC6BBEC9DC9D79D4947D9D28067ED0CE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		261F0FD30FB8894077AFF5CBA3C7F3E7 /* Pods-SealSoundsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3807F4F0108EE4A2C70A519078105C4 /* Info.plist */,
+				B0B8ACF9C8CA082241768796E37B544F /* Pods-SealSoundsUITests.modulemap */,
+				4B63163A285D3806DC30F529BA227E70 /* Pods-SealSoundsUITests-acknowledgements.markdown */,
+				B64EF49152CFF63616D08666AB189401 /* Pods-SealSoundsUITests-acknowledgements.plist */,
+				4D55FEF6C26F791308AD8C169471FE5B /* Pods-SealSoundsUITests-dummy.m */,
+				89D5687AA60D58D587A798C91142DDF4 /* Pods-SealSoundsUITests-frameworks.sh */,
+				75D768324B544423799AECCF92A8842D /* Pods-SealSoundsUITests-resources.sh */,
+				2B1D76888D85C971FE2FE410F8CFE0A2 /* Pods-SealSoundsUITests-umbrella.h */,
+				AFD62C72225957689462A7BD2B6F55AB /* Pods-SealSoundsUITests.debug.xcconfig */,
+				275140D7C93C454A74CBC7833450A175 /* Pods-SealSoundsUITests.release.xcconfig */,
+			);
+			name = "Pods-SealSoundsUITests";
+			path = "Target Support Files/Pods-SealSoundsUITests";
+			sourceTree = "<group>";
+		};
+		29717B9F14A366BDC918535B8814CB28 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B35FDE72F121F1358434BC69181C02B6 /* AppDelegateSwizzler */,
+				D89FEAF8D95C37DA162DEE4272435496 /* Environment */,
+				6513E276C817E43B509C519CD6CD9264 /* Logger */,
+				B0BB75F70B055C4E747F95FC2AABB33C /* MethodSwizzler */,
+				7D77AAD11631DCD47809A32EB1880967 /* Network */,
+				60356ABBA0E9107B9B998B8A33B20836 /* NSData+zlib */,
+				8717DBC8EAE760343932F27FED0A03B2 /* Reachability */,
+				627DF0CFBF0857D0F6E0886BB9F236DD /* Support Files */,
+			);
+			name = GoogleUtilities;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		53D69F8E6F50D06D274261BA305A804C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				682B3F78B604C9AD75FB0909D3DE6918 /* Google-Mobile-Ads-SDK */,
+				FBF9C809161AB62325E9489D0BF4C55F /* GoogleAppMeasurement */,
+				29717B9F14A366BDC918535B8814CB28 /* GoogleUtilities */,
+				F9503A1737DEAD27914438E8FCF7416E /* nanopb */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60356ABBA0E9107B9B998B8A33B20836 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				97DEEBA1EBCB3ED1F7548972AAF4FF7A /* GULNSData+zlib.h */,
+				A8914FEC9A43F1A052C9B0E2079E3FF0 /* GULNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		61985B3F06A1D903B92EFF7317381498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7894F3DF7F86BF16530802BF1F818BC6 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		627DF0CFBF0857D0F6E0886BB9F236DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5143C8787E29B017CB042FC8DC98DE1A /* GoogleUtilities.modulemap */,
+				DA6515E6CC1A9CF4540125E49F64146B /* GoogleUtilities.xcconfig */,
+				1097DB2EFB3F82B55F3DF818BFF0C738 /* GoogleUtilities-dummy.m */,
+				5D3DE97C24EF21ABCC0CD342275A5419 /* GoogleUtilities-prefix.pch */,
+				0871A74BFED4AE74660A7565E0050A48 /* GoogleUtilities-umbrella.h */,
+				40CE3A9888DF2B173D3016770A68C0AA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleUtilities";
+			sourceTree = "<group>";
+		};
+		6513E276C817E43B509C519CD6CD9264 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C5D524BAC85F7C3C83DCA96FB183E /* GULLogger.h */,
+				C06F92045E13854C36CA4D809F2F1C17 /* GULLogger.m */,
+				D25D8E323E871DF052506D2B33A69A64 /* GULLoggerLevel.h */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		682B3F78B604C9AD75FB0909D3DE6918 /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				61985B3F06A1D903B92EFF7317381498 /* Frameworks */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		693D828249E2C3B2AB6426DA7057C30D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B015A90677895C2EF868CDCFAF6D9F2 /* Pods-SealSounds */,
+				D889A2609A8562416B541EF9EBFF5ED8 /* Pods-SealSoundsTests */,
+				261F0FD30FB8894077AFF5CBA3C7F3E7 /* Pods-SealSoundsUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7B015A90677895C2EF868CDCFAF6D9F2 /* Pods-SealSounds */ = {
+			isa = PBXGroup;
+			children = (
+				90A36F641FB5A36D140F4CF43855516D /* Info.plist */,
+				DE3BD8967681D55BFF72BDDC41B3FFC7 /* Pods-SealSounds.modulemap */,
+				902270EB6A5EEE03E13E07962D5EF298 /* Pods-SealSounds-acknowledgements.markdown */,
+				5F572E3D9A43011E43E021549340DA70 /* Pods-SealSounds-acknowledgements.plist */,
+				1A27AA43325C63CA9CBCB2E6F8EB049B /* Pods-SealSounds-dummy.m */,
+				AFB03954212B219CB570A437BE25C77C /* Pods-SealSounds-frameworks.sh */,
+				F838E0EC9AE4F1B061BABAE4FF632C38 /* Pods-SealSounds-resources.sh */,
+				9710AEDC015208DC40EBBF422C7460DD /* Pods-SealSounds-umbrella.h */,
+				D3BDCFECC5989E369F25E3856455F88D /* Pods-SealSounds.debug.xcconfig */,
+				04DC304AFD93B754E7B03117CAD5008E /* Pods-SealSounds.release.xcconfig */,
+			);
+			name = "Pods-SealSounds";
+			path = "Target Support Files/Pods-SealSounds";
+			sourceTree = "<group>";
+		};
+		7D77AAD11631DCD47809A32EB1880967 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				61A8B5B9287C3ECB9F97E56D1A3C6AA8 /* GULMutableDictionary.h */,
+				418FB28A35916B4CFB07DAF3AEAD124B /* GULMutableDictionary.m */,
+				25E0D0595D5A18B40217B1BFD971C6B5 /* GULNetwork.h */,
+				57E2BCC8918E8A55E9CCE2017B180C8D /* GULNetwork.m */,
+				D12994700EDE02A64B224EA5BD785065 /* GULNetworkConstants.h */,
+				A3A82E3774B4A17CFB346CF148700915 /* GULNetworkConstants.m */,
+				DDA438586753D68A2AF6A97854808496 /* GULNetworkLoggerProtocol.h */,
+				094163573C15B0BDE32CD6BA700F9532 /* GULNetworkMessageCode.h */,
+				E7B6B86A732750A6BBAA020279826F7E /* GULNetworkURLSession.h */,
+				DA66BA2ADBBA97FDC11EC8578FEB7159 /* GULNetworkURLSession.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		7D9701E19D08FA0657C81F4217B85AC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				917335627B6B7C56E42889B42B1D5C62 /* Info.plist */,
+				A3BD63D4CE4A71CADB4DF0F62D4C5DBB /* nanopb.modulemap */,
+				2F3C67CD1C1FCA2E888C5412F173E0BE /* nanopb.xcconfig */,
+				8D498AD8F3EA4F5301BBF4BFD3190311 /* nanopb-dummy.m */,
+				8A3A344606BEB5D98D5C78D5B050753F /* nanopb-prefix.pch */,
+				03286847EFABE1D8D8F52DAA5D09A6B8 /* nanopb-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				53D69F8E6F50D06D274261BA305A804C /* Pods */,
+				818D0BE06D451440971A6C72338823EC /* Products */,
+				693D828249E2C3B2AB6426DA7057C30D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		818D0BE06D451440971A6C72338823EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D885138AC0D30332FDCEB8EC0EDF16ED /* GoogleUtilities.framework */,
+				E25BF9E72827F3D3AFD543BFDB0D27F2 /* nanopb.framework */,
+				BB064579D21777F58E7B8E9260558051 /* Pods_SealSounds.framework */,
+				AC2BDE52631F1661EBA6D2DB456822F0 /* Pods_SealSoundsTests.framework */,
+				1F8E4DF3E13B2575DAA3FF35BBBEBC2B /* Pods_SealSoundsUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8717DBC8EAE760343932F27FED0A03B2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				14EDCA0F4ABD9128E7F60F4C4088B4A8 /* GULReachabilityChecker.h */,
+				D95A4F30A6C738251CCA99C50056628B /* GULReachabilityChecker.m */,
+				FF43E31AF492196F9D104CE01AC3FD77 /* GULReachabilityChecker+Internal.h */,
+				6D3AD3C490747B7D0C2E574CBFC64D1F /* GULReachabilityMessageCode.h */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		B0BB75F70B055C4E747F95FC2AABB33C /* MethodSwizzler */ = {
+			isa = PBXGroup;
+			children = (
+				07A1882569FD23D3AB5EDBD716088C7C /* GULOriginalIMPConvenienceMacros.h */,
+				9C0A2FD62DBEF27BA7AF6193591A4487 /* GULSwizzler.h */,
+				9399DA9517E82CB0CAF0D3E1E6ADF974 /* GULSwizzler.m */,
+			);
+			name = MethodSwizzler;
+			sourceTree = "<group>";
+		};
+		B35FDE72F121F1358434BC69181C02B6 /* AppDelegateSwizzler */ = {
+			isa = PBXGroup;
+			children = (
+				4195F543EB54E2A02B6CFF818B5B01F2 /* GULAppDelegateSwizzler.h */,
+				346C09FF9B6A27134091089AA466F5D9 /* GULAppDelegateSwizzler.m */,
+				AEAA4ACB83ED1BA172C99E54E9311A21 /* GULAppDelegateSwizzler_Private.h */,
+				147FD0491E4892F838A421368A70C46E /* GULApplication.h */,
+				D9C1632283993539567832E15F856096 /* GULLoggerCodes.h */,
+			);
+			name = AppDelegateSwizzler;
+			sourceTree = "<group>";
+		};
+		D79147CB141B3A87D99738289F46F4E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D01EB248FAFD20AC0A3D0070AAE7C07 /* GoogleAppMeasurement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D889A2609A8562416B541EF9EBFF5ED8 /* Pods-SealSoundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				760AD2A6B3F978E1925A9B61EF9EC4AC /* Info.plist */,
+				A8E4F1939A707CD4ADFCEA0863BD01D8 /* Pods-SealSoundsTests.modulemap */,
+				C062F030E2488F6A59F962D08474A9E1 /* Pods-SealSoundsTests-acknowledgements.markdown */,
+				531BE5CECE0EB98B3E313F89A927F614 /* Pods-SealSoundsTests-acknowledgements.plist */,
+				6EFAF23428B51184AABBA821B370041F /* Pods-SealSoundsTests-dummy.m */,
+				082832A21662B4C3A6AD0F63217FF0DA /* Pods-SealSoundsTests-frameworks.sh */,
+				2124CCE13C68A91FDE5F48E9430E21AC /* Pods-SealSoundsTests-resources.sh */,
+				EB2C620C620D51074948D693DDF7AA94 /* Pods-SealSoundsTests-umbrella.h */,
+				239EDEF5D4E567F8289718569B56B190 /* Pods-SealSoundsTests.debug.xcconfig */,
+				AFA6238EF10232DD6007D13DC532062A /* Pods-SealSoundsTests.release.xcconfig */,
+			);
+			name = "Pods-SealSoundsTests";
+			path = "Target Support Files/Pods-SealSoundsTests";
+			sourceTree = "<group>";
+		};
+		D89FEAF8D95C37DA162DEE4272435496 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				5DBF5FC6772F5448DBBE7C37A5021A0A /* GULAppEnvironmentUtil.h */,
+				FBD26489E46CE09443F70248817531D5 /* GULAppEnvironmentUtil.m */,
+			);
+			name = Environment;
+			sourceTree = "<group>";
+		};
+		EF14DB852C57718FDE641CFE81FBB3C1 /* decode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = decode;
+			sourceTree = "<group>";
+		};
+		F9503A1737DEAD27914438E8FCF7416E /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				590BC436A4886477F040E7C354116EDD /* pb.h */,
+				BD25FE502037C15897A656E3C514B775 /* pb_common.c */,
+				CBA09D419F0270AB2F4CB16ABC78C8BC /* pb_common.h */,
+				CB778BF6215B9AF70349F6DF29B26681 /* pb_decode.c */,
+				D623A705C684355158D1F09943837FA4 /* pb_decode.h */,
+				33D0E4FF7794629BF1345D8CDA5F5719 /* pb_encode.c */,
+				BA9538CC7EE9AD17D5C55F278A8EC292 /* pb_encode.h */,
+				EF14DB852C57718FDE641CFE81FBB3C1 /* decode */,
+				070FD964D2CA057B0CB76A9E2C8EB2D6 /* encode */,
+				7D9701E19D08FA0657C81F4217B85AC8 /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+		FBF9C809161AB62325E9489D0BF4C55F /* GoogleAppMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				D79147CB141B3A87D99738289F46F4E6 /* Frameworks */,
+			);
+			name = GoogleAppMeasurement;
+			path = GoogleAppMeasurement;
+			sourceTree = "<group>";
+		};
+		FC6BBEC9DC9D79D4947D9D28067ED0CE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4AD3A658F3BBCCCA2ECB82EF68076FCA /* Foundation.framework */,
+				5BEC7D39C0C0D0226340D3016B83ABB9 /* Security.framework */,
+				CD19C461B34FE4F98A7838E77648F21C /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01A1B9909F333C6733F1800AF2125E34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9770E22003B4527FAC39491E678275 /* Pods-SealSoundsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4547B9AF8085A499AA35614798F8F9E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */,
+				392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */,
+				806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */,
+				29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */,
+				E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		537271DF8BE74D30AA19E19E06B87EC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410AC35D2D63FEBF17460B0EA77E4B9C /* GoogleUtilities-umbrella.h in Headers */,
+				88C2FD082A57CC3AB1A93F7ACAB70F2B /* GULAppDelegateSwizzler.h in Headers */,
+				E718178EC4C665DABE767F5C09E07456 /* GULAppDelegateSwizzler_Private.h in Headers */,
+				81E7EE03DECAF684194E6E5CEECA1360 /* GULAppEnvironmentUtil.h in Headers */,
+				C0D1AE663484AA7E8AB51EBCED863027 /* GULApplication.h in Headers */,
+				26CCC8B39FB284AB539C5DA429FC09DF /* GULLogger.h in Headers */,
+				064AF504EEABE91D16D493556C29D45A /* GULLoggerCodes.h in Headers */,
+				D7715B3A3A1602DF76CEF60D23341A28 /* GULLoggerLevel.h in Headers */,
+				D7B34C05A2082DC6B808C07323DD2D6F /* GULMutableDictionary.h in Headers */,
+				09C1DD4F3DEF5CF39D4454F1015D38D6 /* GULNetwork.h in Headers */,
+				3B6B1B198C233F114BA06D8CE9787431 /* GULNetworkConstants.h in Headers */,
+				3CBD5D3A1D23BAF864D19EC1AE61902C /* GULNetworkLoggerProtocol.h in Headers */,
+				A8C37100707FE19E8FA59F185CE4A0E6 /* GULNetworkMessageCode.h in Headers */,
+				487DFE4B0E232C1A023A4977E7001B30 /* GULNetworkURLSession.h in Headers */,
+				D27A757065EFF358D60685D85645BF0B /* GULNSData+zlib.h in Headers */,
+				5A7D30AE0F21BD03C648F930121EEA1D /* GULOriginalIMPConvenienceMacros.h in Headers */,
+				8AB16EA5856666193D2987EC4D10581C /* GULReachabilityChecker+Internal.h in Headers */,
+				A46AEFFC52E4B5C9BA7D5FD39D327EC4 /* GULReachabilityChecker.h in Headers */,
+				0DF18CCFBB5C8A79CAF85F7C02CBDB58 /* GULReachabilityMessageCode.h in Headers */,
+				DE8F997CCE1C0D87E4727F27F540294E /* GULSwizzler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95DA191BBDEDDB82724CF67EA751A75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FCAD17C275491C9CBFECD65E301AE1 /* Pods-SealSoundsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3A49144F4E6B5F974617E2D83C422F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1D700236A0DC85CD8C789CE8354645 /* Pods-SealSounds-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C18419322F422CADF27BE618A79298F /* Pods-SealSoundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB9488305B19FB2D49EF671DFA216F0 /* Build configuration list for PBXNativeTarget "Pods-SealSoundsTests" */;
+			buildPhases = (
+				CE7F5931F7E41F07583E489AE1DDC1BD /* Sources */,
+				DE133E92801B23FC422E4DE7AF839240 /* Frameworks */,
+				01A1B9909F333C6733F1800AF2125E34 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7A59253ED75258E60C146BB205619EB /* PBXTargetDependency */,
+			);
+			name = "Pods-SealSoundsTests";
+			productName = "Pods-SealSoundsTests";
+			productReference = AC2BDE52631F1661EBA6D2DB456822F0 /* Pods_SealSoundsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF4DD607B3C88F673EADCB19773FA3E6 /* Pods-SealSounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 876E246ACCB9BD4551A5DD87D8EE2F38 /* Build configuration list for PBXNativeTarget "Pods-SealSounds" */;
+			buildPhases = (
+				52650CB8C044F5FF7EC86BA91971FBE1 /* Sources */,
+				C4F281DEE04BCA494CCF4DD841C7124C /* Frameworks */,
+				EB3A49144F4E6B5F974617E2D83C422F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B4707BB7391FF229CCDAE7E46C82046 /* PBXTargetDependency */,
+				3970B930EF5670F7078A9E4253C88956 /* PBXTargetDependency */,
+			);
+			name = "Pods-SealSounds";
+			productName = "Pods-SealSounds";
+			productReference = BB064579D21777F58E7B8E9260558051 /* Pods_SealSounds.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3F561F17101D9163B0D397ED3A5B59F /* Pods-SealSoundsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF7FBD55CC135F82EB3571F646BC65E /* Build configuration list for PBXNativeTarget "Pods-SealSoundsUITests" */;
+			buildPhases = (
+				DBA9AC6D8C7E2B1B72251C75055DE424 /* Sources */,
+				B2E77B437721CBAE400FCE78ED75C9ED /* Frameworks */,
+				D95DA191BBDEDDB82724CF67EA751A75 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6F4AC4ECA6F215944F461B08CE70C50 /* PBXTargetDependency */,
+			);
+			name = "Pods-SealSoundsUITests";
+			productName = "Pods-SealSoundsUITests";
+			productReference = 1F8E4DF3E13B2575DAA3FF35BBBEBC2B /* Pods_SealSoundsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				238527BE8D494586023F2A2B8A60D242 /* Sources */,
+				971041836592E28ADEEDA495A96A62A2 /* Frameworks */,
+				4547B9AF8085A499AA35614798F8F9E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = E25BF9E72827F3D3AFD543BFDB0D27F2 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4679E78B35182C1BFCEF32163093400 /* GoogleUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3549A7BB65C81DFDF03459CE8FE523DA /* Build configuration list for PBXNativeTarget "GoogleUtilities" */;
+			buildPhases = (
+				D7934414A2EAF3B2279E8670712E932F /* Sources */,
+				F68FB4CDCB813C5D626E3B0D744EEB35 /* Frameworks */,
+				537271DF8BE74D30AA19E19E06B87EC0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleUtilities;
+			productName = GoogleUtilities;
+			productReference = D885138AC0D30332FDCEB8EC0EDF16ED /* GoogleUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 818D0BE06D451440971A6C72338823EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4679E78B35182C1BFCEF32163093400 /* GoogleUtilities */,
+				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
+				AF4DD607B3C88F673EADCB19773FA3E6 /* Pods-SealSounds */,
+				7C18419322F422CADF27BE618A79298F /* Pods-SealSoundsTests */,
+				E3F561F17101D9163B0D397ED3A5B59F /* Pods-SealSoundsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		238527BE8D494586023F2A2B8A60D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */,
+				3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */,
+				54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */,
+				55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52650CB8C044F5FF7EC86BA91971FBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CBCE73DA5E7C714DC8758552F16BED /* Pods-SealSounds-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7F5931F7E41F07583E489AE1DDC1BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A151D1AD6BFF47E752D8F9CBBDCA0FA3 /* Pods-SealSoundsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7934414A2EAF3B2279E8670712E932F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D76CFA163D7647B206AC284771E44D8 /* GoogleUtilities-dummy.m in Sources */,
+				ACDEA832C72E143A227772CE64F54182 /* GULAppDelegateSwizzler.m in Sources */,
+				590F2B905DA9615E90B39A77F778E58F /* GULAppEnvironmentUtil.m in Sources */,
+				B94A620F7C634482A66F1F4B93818E82 /* GULLogger.m in Sources */,
+				E24495B3EF5B7A0E1C92279BC8CACACE /* GULMutableDictionary.m in Sources */,
+				4C05369D1C2AFFDC6E8CC6A21FF6FFFB /* GULNetwork.m in Sources */,
+				E2EBCB5462B764F9B7070284A569B225 /* GULNetworkConstants.m in Sources */,
+				161F339A67E424DAA844EA7C48DFAB0B /* GULNetworkURLSession.m in Sources */,
+				5705CFB8795548E7A3DCF31750D8358C /* GULNSData+zlib.m in Sources */,
+				1F8144E53E1A43EADE417A19539780A3 /* GULReachabilityChecker.m in Sources */,
+				25ACD1B14047CDEBEFD043F80825E81E /* GULSwizzler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9AC6D8C7E2B1B72251C75055DE424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7C3509E37A8DBB6592A8FAF564321F /* Pods-SealSoundsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B4707BB7391FF229CCDAE7E46C82046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleUtilities;
+			target = F4679E78B35182C1BFCEF32163093400 /* GoogleUtilities */;
+			targetProxy = CF49139D1A833327D9FDDE510A3784F5 /* PBXContainerItemProxy */;
+		};
+		3970B930EF5670F7078A9E4253C88956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
+			targetProxy = 73BE7A783F460FDF980294AAD97A7FCC /* PBXContainerItemProxy */;
+		};
+		B6F4AC4ECA6F215944F461B08CE70C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SealSounds";
+			target = AF4DD607B3C88F673EADCB19773FA3E6 /* Pods-SealSounds */;
+			targetProxy = 49881BDFE9C55E2E9C5B5B9E536B2B8E /* PBXContainerItemProxy */;
+		};
+		B7A59253ED75258E60C146BB205619EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SealSounds";
+			target = AF4DD607B3C88F673EADCB19773FA3E6 /* Pods-SealSounds */;
+			targetProxy = EA7DD45B790FF239BD224B48D31DA547 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		074D767DA2D3BA3AE3674AE723549F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3BDCFECC5989E369F25E3856455F88D /* Pods-SealSounds.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSounds/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSounds/Pods-SealSounds.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		084A2A6091ED12978638018B2DF553BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD62C72225957689462A7BD2B6F55AB /* Pods-SealSoundsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSoundsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSoundsUITests/Pods-SealSoundsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A91F84B3E99E2C9F66FA23D4D4F381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6515E6CC1A9CF4540125E49F64146B /* GoogleUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GoogleUtilities/GoogleUtilities.modulemap";
+				PRODUCT_MODULE_NAME = GoogleUtilities;
+				PRODUCT_NAME = GoogleUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		528D5EBBFF9A1F64F2B5F05279C6A051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275140D7C93C454A74CBC7833450A175 /* Pods-SealSoundsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSoundsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSoundsUITests/Pods-SealSoundsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		785CC3A367B2312950D29331F968D0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DC304AFD93B754E7B03117CAD5008E /* Pods-SealSounds.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSounds/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSounds/Pods-SealSounds.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BB136EB423DF1483E5151B6341C4F46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3C67CD1C1FCA2E888C5412F173E0BE /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_MODULE_NAME = nanopb;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD40C14EC210A48FB73C99AB4AD43504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239EDEF5D4E567F8289718569B56B190 /* Pods-SealSoundsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSoundsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSoundsTests/Pods-SealSoundsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6433B00FDB1ACDB5D011E598C227846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3C67CD1C1FCA2E888C5412F173E0BE /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				PRODUCT_MODULE_NAME = nanopb;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0F2F31715084F74A568B1631012148E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA6238EF10232DD6007D13DC532062A /* Pods-SealSoundsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SealSoundsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SealSoundsTests/Pods-SealSoundsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F71CB4C2A44BE915F954AF1980DD2BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6515E6CC1A9CF4540125E49F64146B /* GoogleUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GoogleUtilities/GoogleUtilities.modulemap";
+				PRODUCT_MODULE_NAME = GoogleUtilities;
+				PRODUCT_NAME = GoogleUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB9488305B19FB2D49EF671DFA216F0 /* Build configuration list for PBXNativeTarget "Pods-SealSoundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD40C14EC210A48FB73C99AB4AD43504 /* Debug */,
+				F0F2F31715084F74A568B1631012148E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3549A7BB65C81DFDF03459CE8FE523DA /* Build configuration list for PBXNativeTarget "GoogleUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A91F84B3E99E2C9F66FA23D4D4F381F /* Debug */,
+				F71CB4C2A44BE915F954AF1980DD2BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		876E246ACCB9BD4551A5DD87D8EE2F38 /* Build configuration list for PBXNativeTarget "Pods-SealSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074D767DA2D3BA3AE3674AE723549F4B /* Debug */,
+				785CC3A367B2312950D29331F968D0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF7FBD55CC135F82EB3571F646BC65E /* Build configuration list for PBXNativeTarget "Pods-SealSoundsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084A2A6091ED12978638018B2DF553BD /* Debug */,
+				528D5EBBFF9A1F64F2B5F05279C6A051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6433B00FDB1ACDB5D011E598C227846 /* Debug */,
+				BB136EB423DF1483E5151B6341C4F46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_SealSoundsUITests {
+  umbrella header "Pods-SealSoundsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

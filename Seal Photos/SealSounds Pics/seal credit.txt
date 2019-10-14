@@ -1,0 +1,5 @@
+Hi, I used your Seal photo for my iOS app SealSounds (https://apps.apple.com/app/id1479633015?fbclid=IwAR0bHZG8s1hrHbryDSaEh1ashYXRzOps3KS_GBhECc9pP1LEuq367hngjZI)
+
+It shows up as the background photo sometimes(it's a random generator)
+
+Thanks for making it open source. Would you like me to provide a link back to your page on the webpage for my app (samgermain.com/SealSounds)?
