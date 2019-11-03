@@ -23,9 +23,11 @@ class SoundBoard{
     init(sounds: [String], soundButtons: [UIButton]){
         //Assign noise and text to all the buttons
         for buttonNum in 0..<soundButtons.count {
-            let button = Button(text: sounds[buttonNum], index: buttonNum)
-            buttons.append(button)
-            soundButtons[buttonNum].setTitle(sounds[buttonNum], for: .normal)
+            if !(buttonNum >= sounds.count){
+                let button = Button(text: sounds[buttonNum], index: buttonNum)
+                buttons.append(button)
+                soundButtons[buttonNum].setTitle(sounds[buttonNum], for: .normal)
+            }
         }
     }
     

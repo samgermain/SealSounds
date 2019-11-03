@@ -10,6 +10,11 @@
 		22024D4323249D4000E872A3 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 22024D4223249D4000E872A3 /* Sounds */; };
 		220388F22243CD60008A8433 /* SoundBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F12243CD60008A8433 /* SoundBoard.swift */; };
 		220388F62243D179008A8433 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F52243D179008A8433 /* Button.swift */; };
+		2259724D235A560D00F99977 /* SoundBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259724C235A560D00F99977 /* SoundBoardView.swift */; };
+		22657379236CF8E600E28C02 /* Filenames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22657378236CF8E500E28C02 /* Filenames.swift */; };
+		2265737B236CF9A200E28C02 /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265737A236CF9A200E28C02 /* SoundButton.swift */; };
+		2265737D236CFC5D00E28C02 /* ButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265737C236CFC5D00E28C02 /* ButtonStack.swift */; };
+		2265737F236D0AFF00E28C02 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265737E236D0AFF00E28C02 /* Images.swift */; };
 		22E3A23B223F982E00C1967E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A23A223F982E00C1967E /* AppDelegate.swift */; };
 		22E3A23D223F982E00C1967E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A23C223F982E00C1967E /* ViewController.swift */; };
 		22E3A240223F982E00C1967E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A23E223F982E00C1967E /* Main.storyboard */; };
@@ -17,6 +22,8 @@
 		22E3A245223F983100C1967E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A243223F983100C1967E /* LaunchScreen.storyboard */; };
 		22E3A250223F983200C1967E /* SealSoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A24F223F983200C1967E /* SealSoundsTests.swift */; };
 		22E3A25B223F983200C1967E /* SealSoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A25A223F983200C1967E /* SealSoundsUITests.swift */; };
+		22F6186C235B62A100F5E401 /* PremiumButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F6186B235B62A100F5E401 /* PremiumButton.xib */; };
+		22F6186E235B64CA00F5E401 /* PremiumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6186D235B64CA00F5E401 /* PremiumButton.swift */; };
 		64C9946FFBFB19CE8D54D39C /* Pods_SealSounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A350512E731F0986E394BC /* Pods_SealSounds.framework */; };
 		79E77D7112A3D3BC4D0C744D /* Pods_SealSoundsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B976F9DB33418BC0F3201F27 /* Pods_SealSoundsUITests.framework */; };
 		F2C6BD5FCF7B98824B1703E4 /* Pods_SealSoundsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF5BC7C25FE660AA8DBBA1E /* Pods_SealSoundsTests.framework */; };
@@ -45,6 +52,11 @@
 		22024D4223249D4000E872A3 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		220388F12243CD60008A8433 /* SoundBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard.swift; sourceTree = "<group>"; };
 		220388F52243D179008A8433 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2259724C235A560D00F99977 /* SoundBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardView.swift; sourceTree = "<group>"; };
+		22657378236CF8E500E28C02 /* Filenames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filenames.swift; sourceTree = "<group>"; };
+		2265737A236CF9A200E28C02 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		2265737C236CFC5D00E28C02 /* ButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStack.swift; sourceTree = "<group>"; };
+		2265737E236D0AFF00E28C02 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		22BB3DE02326ED4F001AA6EC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E3A237223F982E00C1967E /* SealSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SealSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E3A23A223F982E00C1967E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,8 @@
 		22E3A256223F983200C1967E /* SealSoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SealSoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E3A25A223F983200C1967E /* SealSoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SealSoundsUITests.swift; sourceTree = "<group>"; };
 		22E3A25C223F983200C1967E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F6186B235B62A100F5E401 /* PremiumButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PremiumButton.xib; sourceTree = "<group>"; };
+		22F6186D235B64CA00F5E401 /* PremiumButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButton.swift; sourceTree = "<group>"; };
 		39A350512E731F0986E394BC /* Pods_SealSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SealSounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33A13859E714DC2A4ECD352 /* Pods-SealSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealSoundsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SealSoundsUITests/Pods-SealSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B50832EEFB943C2F56344516 /* Pods-SealSoundsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealSoundsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SealSoundsTests/Pods-SealSoundsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,15 +148,11 @@
 		22E3A239223F982E00C1967E /* SealSounds */ = {
 			isa = PBXGroup;
 			children = (
-				22E3A23A223F982E00C1967E /* AppDelegate.swift */,
-				22E3A23C223F982E00C1967E /* ViewController.swift */,
-				22024D4223249D4000E872A3 /* Sounds */,
-				22E3A23E223F982E00C1967E /* Main.storyboard */,
-				220388F12243CD60008A8433 /* SoundBoard.swift */,
-				22E3A241223F983100C1967E /* Assets.xcassets */,
-				22E3A243223F983100C1967E /* LaunchScreen.storyboard */,
+				22F6186A235B625500F5E401 /* helper files */,
+				22F61869235B623E00F5E401 /* controlller */,
+				22F61867235B61FC00F5E401 /* view */,
+				22F61868235B621A00F5E401 /* model */,
 				22E3A246223F983100C1967E /* Info.plist */,
-				220388F52243D179008A8433 /* Button.swift */,
 			);
 			path = SealSounds;
 			sourceTree = "<group>";
@@ -163,6 +173,49 @@
 				22E3A25C223F983200C1967E /* Info.plist */,
 			);
 			path = SealSoundsUITests;
+			sourceTree = "<group>";
+		};
+		22F61867235B61FC00F5E401 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2265737A236CF9A200E28C02 /* SoundButton.swift */,
+				22E3A23E223F982E00C1967E /* Main.storyboard */,
+				22E3A243223F983100C1967E /* LaunchScreen.storyboard */,
+				2259724C235A560D00F99977 /* SoundBoardView.swift */,
+				22F6186B235B62A100F5E401 /* PremiumButton.xib */,
+				22F6186D235B64CA00F5E401 /* PremiumButton.swift */,
+				2265737C236CFC5D00E28C02 /* ButtonStack.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		22F61868235B621A00F5E401 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				22024D4223249D4000E872A3 /* Sounds */,
+				220388F12243CD60008A8433 /* SoundBoard.swift */,
+				220388F52243D179008A8433 /* Button.swift */,
+				22657378236CF8E500E28C02 /* Filenames.swift */,
+				2265737E236D0AFF00E28C02 /* Images.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		22F61869235B623E00F5E401 /* controlller */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A23C223F982E00C1967E /* ViewController.swift */,
+			);
+			path = controlller;
+			sourceTree = "<group>";
+		};
+		22F6186A235B625500F5E401 /* helper files */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A23A223F982E00C1967E /* AppDelegate.swift */,
+				22E3A241223F983100C1967E /* Assets.xcassets */,
+			);
+			path = "helper files";
 			sourceTree = "<group>";
 		};
 		C8C4E842596DB227A3F69BCF /* Frameworks */ = {
@@ -248,13 +301,16 @@
 				TargetAttributes = {
 					22E3A236223F982E00C1967E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
 					};
 					22E3A24A223F983100C1967E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
 						TestTargetID = 22E3A236223F982E00C1967E;
 					};
 					22E3A255223F983200C1967E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
 						TestTargetID = 22E3A236223F982E00C1967E;
 					};
 				};
@@ -285,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E3A245223F983100C1967E /* LaunchScreen.storyboard in Resources */,
+				22F6186C235B62A100F5E401 /* PremiumButton.xib in Resources */,
 				22E3A242223F983100C1967E /* Assets.xcassets in Resources */,
 				22024D4323249D4000E872A3 /* Sounds in Resources */,
 				22E3A240223F982E00C1967E /* Main.storyboard in Resources */,
@@ -390,9 +447,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E3A23D223F982E00C1967E /* ViewController.swift in Sources */,
+				2265737B236CF9A200E28C02 /* SoundButton.swift in Sources */,
 				220388F22243CD60008A8433 /* SoundBoard.swift in Sources */,
 				220388F62243D179008A8433 /* Button.swift in Sources */,
+				22657379236CF8E600E28C02 /* Filenames.swift in Sources */,
+				2259724D235A560D00F99977 /* SoundBoardView.swift in Sources */,
 				22E3A23B223F982E00C1967E /* AppDelegate.swift in Sources */,
+				2265737F236D0AFF00E28C02 /* Images.swift in Sources */,
+				22F6186E235B64CA00F5E401 /* PremiumButton.swift in Sources */,
+				2265737D236CFC5D00E28C02 /* ButtonStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +644,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -602,7 +665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -623,7 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSoundsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SealSounds.app/SealSounds";
 			};
@@ -645,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSoundsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SealSounds.app/SealSounds";
 			};
@@ -666,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSoundsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SealSounds;
 			};
@@ -687,7 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSoundsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SealSounds;
 			};
