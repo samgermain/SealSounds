@@ -19,9 +19,10 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     @IBOutlet weak var innerStackView: UIStackView!
     @IBOutlet var bannerView: GADBannerView!        //Admob Ad banner
     @IBOutlet weak var background: UIImageView!     //The image displayed in the background of the app
-    var firstButton: UIButton!
+    var firstButton: PremiumButton!
     var soundBoard: SoundBoard!
     var soundButtons = [UIButton]()
+    var premiumButtons = [PremiumButton]()
     
     @objc func touchButton(sender: UIButton) {
         let soundNumber = soundButtons.firstIndex(of: sender)!   //The index of the button
@@ -48,6 +49,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         self.createSoundBoardView(numberOfButtons: sounds.count)
         soundBoard = SoundBoard(sounds: sounds, soundButtons: soundButtons)
         
+        for button in self.premiumButtons{
+            let sound = button.button.titleLabel!.text!
+            if !Filenames.premiumSounds.contains(sound){
+                button.premiumLabel.removeFromSuperview()
+            }
+        }
+        
         background.image = Images.randomImage()
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.load(GADRequest())
@@ -66,6 +74,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         var buttonStack = self.buttonStack()
         self.firstButton = createButton()
         buttonStack.addArrangedSubview(firstButton)
+    //self.firstButton.premiumLabel.removeFromSuperview()
         var buttonCount = 2
         for _ in 1..<numberOfButtons{
             let button = self.createButton()
@@ -111,11 +120,17 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         innerStackView.addConstraints([hCon])
     }
     
-    func createButton() -> UIButton{
-        let button = SoundButton()
-        button.addTarget(self, action: #selector(touchButton(sender:)), for: .touchUpInside)
-        soundButtons.append(button)
-        return button
+    func createButton() -> PremiumButton{
+        let pButton = PremiumButton()
+        premiumButtons.append(pButton)
+        
+        if let button = pButton.button{
+            soundButtons.append(button)
+            button.addTarget(self, action: #selector(touchButton(sender:)), for: .touchUpInside)
+        }
+
+        
+        return pButton
     }
     
 }
