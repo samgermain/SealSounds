@@ -9,10 +9,11 @@
 import UIKit
 import GoogleMobileAds
 
-class ViewController: UIViewController, GADBannerViewDelegate {
+class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDelegate {
+    
     
     //This whole class is our controller, the storyboard is the view
-
+    var products: [SKProduct] = []
     
     @IBOutlet weak var outerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -27,6 +28,40 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     @objc func touchButton(sender: UIButton) {
         let soundNumber = soundButtons.firstIndex(of: sender)!   //The index of the button
         soundBoard.playSound(at: soundNumber)
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        reload()
+    }
+    
+    @objc func reload() {
+      products = []
+      
+      
+      Products.store.requestProducts{ [weak self] success, products in
+        guard let self = self else { return }
+        if success {
+          self.products = products!
+        }
+        }
+    }
+    
+    func buyPremium() {
+        for prod in self.products{
+          if prod.productIdentifier == Products.premium{
+            if Products.store.isProductPurchased(prod.productIdentifier){
+              Products.store.restorePurchases()
+            }else if IAPHelper.canMakePayments(){
+              Products.store.buyProduct(prod)
+            }else{
+              let alert = UIAlertController(title: "Cannot make payments", message: "You are not authorized to make payments on this device", preferredStyle: .alert )
+              let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+              alert.addAction(action)
+              self.present(alert, animated: true)
+            }
+          }
+        }
     }
     
     override func viewDidLoad() {
@@ -51,10 +86,11 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         for button in self.premiumButtons{
             let sound = button.button.titleLabel!.text!
-            if !Filenames.premiumSounds.contains(sound){
+            if !Filenames.premiumSounds.contains(sound) || Products.store.isProductPurchased("1985162691"){
                 button.premiumLabel.removeFromSuperview()
             }
         }
+        print(Products.store.purchasedProductIdentifiers)
         
         background.image = Images.randomImage()
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
@@ -122,6 +158,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     func createButton() -> PremiumButton{
         let pButton = PremiumButton()
+        pButton.delegate = self
         premiumButtons.append(pButton)
         
         if let button = pButton.button{

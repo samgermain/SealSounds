@@ -10,6 +10,9 @@
 		22024D4323249D4000E872A3 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 22024D4223249D4000E872A3 /* Sounds */; };
 		220388F22243CD60008A8433 /* SoundBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F12243CD60008A8433 /* SoundBoard.swift */; };
 		220388F62243D179008A8433 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F52243D179008A8433 /* Button.swift */; };
+		22247FEF2371E5DB007379DD /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FEE2371E5DB007379DD /* Products.swift */; };
+		22247FF12371E6CD007379DD /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FF02371E6CD007379DD /* IAPHelper.swift */; };
+		22247FF32371F86B007379DD /* PremiumButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */; };
 		2259724D235A560D00F99977 /* SoundBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259724C235A560D00F99977 /* SoundBoardView.swift */; };
 		22657379236CF8E600E28C02 /* Filenames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22657378236CF8E500E28C02 /* Filenames.swift */; };
 		2265737B236CF9A200E28C02 /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265737A236CF9A200E28C02 /* SoundButton.swift */; };
@@ -52,6 +55,9 @@
 		22024D4223249D4000E872A3 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		220388F12243CD60008A8433 /* SoundBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard.swift; sourceTree = "<group>"; };
 		220388F52243D179008A8433 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		22247FEE2371E5DB007379DD /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		22247FF02371E6CD007379DD /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButtonDelegate.swift; sourceTree = "<group>"; };
 		2259724C235A560D00F99977 /* SoundBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardView.swift; sourceTree = "<group>"; };
 		22657378236CF8E500E28C02 /* Filenames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filenames.swift; sourceTree = "<group>"; };
 		2265737A236CF9A200E28C02 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
@@ -123,6 +129,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		22247FED2371E5C2007379DD /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				22247FEE2371E5DB007379DD /* Products.swift */,
+				22247FF02371E6CD007379DD /* IAPHelper.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
 		22E3A22E223F982E00C1967E = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +198,6 @@
 				22E3A243223F983100C1967E /* LaunchScreen.storyboard */,
 				2259724C235A560D00F99977 /* SoundBoardView.swift */,
 				22F6186B235B62A100F5E401 /* PremiumButton.xib */,
-				22F6186D235B64CA00F5E401 /* PremiumButton.swift */,
 				2265737C236CFC5D00E28C02 /* ButtonStack.swift */,
 			);
 			path = view;
@@ -192,6 +206,7 @@
 		22F61868235B621A00F5E401 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				22247FED2371E5C2007379DD /* IAP */,
 				22024D4223249D4000E872A3 /* Sounds */,
 				220388F12243CD60008A8433 /* SoundBoard.swift */,
 				220388F52243D179008A8433 /* Button.swift */,
@@ -204,7 +219,9 @@
 		22F61869235B623E00F5E401 /* controlller */ = {
 			isa = PBXGroup;
 			children = (
+				22F6186D235B64CA00F5E401 /* PremiumButton.swift */,
 				22E3A23C223F982E00C1967E /* ViewController.swift */,
+				22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */,
 			);
 			path = controlller;
 			sourceTree = "<group>";
@@ -447,8 +464,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E3A23D223F982E00C1967E /* ViewController.swift in Sources */,
+				22247FEF2371E5DB007379DD /* Products.swift in Sources */,
 				2265737B236CF9A200E28C02 /* SoundButton.swift in Sources */,
 				220388F22243CD60008A8433 /* SoundBoard.swift in Sources */,
+				22247FF12371E6CD007379DD /* IAPHelper.swift in Sources */,
 				220388F62243D179008A8433 /* Button.swift in Sources */,
 				22657379236CF8E600E28C02 /* Filenames.swift in Sources */,
 				2259724D235A560D00F99977 /* SoundBoardView.swift in Sources */,
@@ -456,6 +475,7 @@
 				2265737F236D0AFF00E28C02 /* Images.swift in Sources */,
 				22F6186E235B64CA00F5E401 /* PremiumButton.swift in Sources */,
 				2265737D236CFC5D00E28C02 /* ButtonStack.swift in Sources */,
+				22247FF32371F86B007379DD /* PremiumButtonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
