@@ -147,6 +147,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
     print("complete...")
     deliverPurchaseNotificationFor(identifier: transaction.payment.productIdentifier)
     SKPaymentQueue.default().finishTransaction(transaction)
+    postNotification()
   }
 
   private func restore(transaction: SKPaymentTransaction) {
@@ -155,7 +156,12 @@ extension IAPHelper: SKPaymentTransactionObserver {
     print("restore... \(productIdentifier)")
     deliverPurchaseNotificationFor(identifier: productIdentifier)
     SKPaymentQueue.default().finishTransaction(transaction)
+    postNotification()
   }
+    
+    private func postNotification(){
+        NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "PremiumPurchased"), object: nil)
+    }
 
   private func fail(transaction: SKPaymentTransaction) {
     print("fail...")

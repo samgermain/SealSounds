@@ -96,6 +96,18 @@ class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDele
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.load(GADRequest())
         
+        NotificationCenter.default.addObserver(self, selector: #selector(removePremiumLabels), name: NSNotification.Name(rawValue: "PremiumPurchased"), object: nil)
+        
+    }
+    
+    @objc func removePremiumLabels(){
+        for button in self.premiumButtons{
+            if (button.button.titleLabel?.text) != nil{
+                if button.premiumLabel != nil{
+                    button.premiumLabel.removeFromSuperview()
+                }
+            }
+        }
     }
 
     //override func viewWillLayoutSubviews() {
