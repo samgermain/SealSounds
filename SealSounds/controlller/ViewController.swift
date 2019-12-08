@@ -38,7 +38,6 @@ class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDele
     @objc func reload() {
       products = []
       
-      
       Products.store.requestProducts{ [weak self] success, products in
         guard let self = self else { return }
         if success {
@@ -87,13 +86,15 @@ class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDele
         for button in self.premiumButtons{
             let sound = button.button.titleLabel!.text!
             if !Filenames.premiumSounds.contains(sound) || Products.store.isProductPurchased("1985162691"){
-                button.premiumLabel.removeFromSuperview()
+                button.premiumButton.removeFromSuperview()
+                button.premiumTextLabel.removeFromSuperview()
             }
         }
         print(Products.store.purchasedProductIdentifiers)
         
         background.image = Images.randomImage()
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-6273488784837824/9559414805"
+        //bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.load(GADRequest())
         
         NotificationCenter.default.addObserver(self, selector: #selector(removePremiumLabels), name: NSNotification.Name(rawValue: "PremiumPurchased"), object: nil)
@@ -103,8 +104,9 @@ class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDele
     @objc func removePremiumLabels(){
         for button in self.premiumButtons{
             if (button.button.titleLabel?.text) != nil{
-                if button.premiumLabel != nil{
-                    button.premiumLabel.removeFromSuperview()
+                if button.premiumButton != nil{
+                    button.premiumButton.removeFromSuperview()
+                    button.premiumTextLabel.removeFromSuperview()
                 }
             }
         }
@@ -159,7 +161,7 @@ class ViewController: UIViewController, GADBannerViewDelegate, PremiumButtonDele
     }
     
     func innerStackConstraints(){
-        let wCon = NSLayoutConstraint(item: innerStackView, attribute: .width, relatedBy: .equal, toItem: outerView, attribute: .width, multiplier: 1, constant: 0)
+        let wCon = NSLayoutConstraint(item: innerStackView!, attribute: .width, relatedBy: .equal, toItem: outerView, attribute: .width, multiplier: 1, constant: 0)
         outerView.addConstraints([wCon])
     }
     

@@ -10,6 +10,7 @@
 		22024D4323249D4000E872A3 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 22024D4223249D4000E872A3 /* Sounds */; };
 		220388F22243CD60008A8433 /* SoundBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F12243CD60008A8433 /* SoundBoard.swift */; };
 		220388F62243D179008A8433 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220388F52243D179008A8433 /* Button.swift */; };
+		2207BE9E239C5D9F000AB4D3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207BE9D239C5D9F000AB4D3 /* TableViewController.swift */; };
 		22247FEF2371E5DB007379DD /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FEE2371E5DB007379DD /* Products.swift */; };
 		22247FF12371E6CD007379DD /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FF02371E6CD007379DD /* IAPHelper.swift */; };
 		22247FF32371F86B007379DD /* PremiumButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */; };
@@ -55,6 +56,7 @@
 		22024D4223249D4000E872A3 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		220388F12243CD60008A8433 /* SoundBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard.swift; sourceTree = "<group>"; };
 		220388F52243D179008A8433 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2207BE9D239C5D9F000AB4D3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		22247FEE2371E5DB007379DD /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		22247FF02371E6CD007379DD /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumButtonDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				22F6186D235B64CA00F5E401 /* PremiumButton.swift */,
 				22E3A23C223F982E00C1967E /* ViewController.swift */,
 				22247FF22371F86B007379DD /* PremiumButtonDelegate.swift */,
+				2207BE9D239C5D9F000AB4D3 /* TableViewController.swift */,
 			);
 			path = controlller;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E3A23D223F982E00C1967E /* ViewController.swift in Sources */,
+				2207BE9E239C5D9F000AB4D3 /* TableViewController.swift in Sources */,
 				22247FEF2371E5DB007379DD /* Products.swift in Sources */,
 				2265737B236CF9A200E28C02 /* SoundButton.swift in Sources */,
 				220388F22243CD60008A8433 /* SoundBoard.swift in Sources */,
@@ -655,12 +659,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9L7XHKAWB2;
 				INFOPLIST_FILE = SealSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -676,12 +682,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9L7XHKAWB2;
 				INFOPLIST_FILE = SealSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sam-G.SealSounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
