@@ -89,6 +89,15 @@ extension IAPHelper {
   public func restorePurchases() {
     SKPaymentQueue.default().restoreCompletedTransactions()
   }
+    
+    public func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        if queue.transactions.count == 0{
+            NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "InvalidRestore"), object: nil)
+        }else{
+            NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "PurchasesRestored"), object: nil)
+        }
+    }
+    
 }
 
 // MARK: - SKProductsRequestDelegate

@@ -23,7 +23,23 @@ class TableViewController: UITableViewController {
           if success {
             self.products = products!
           }
-          }
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(invalidRestore), name: NSNotification.Name(rawValue: "InvalidRestore"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(purchasesRestored), name: NSNotification.Name(rawValue: "PurchasesRestored"), object: nil)
+        
+    }
+    
+    @objc private func invalidRestore(){
+        let alert = UIAlertController(title: "Geaaaagh", message: "You have no purchases to restore", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: false)
+    }
+    
+    @objc private func purchasesRestored(){
+        let alert = UIAlertController(title: "Purchases Restored", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: false)
     }
     
     func buyPremium() {
